@@ -6,6 +6,10 @@ import BreezeInputError from '@/Components/InputError.vue';
 import BreezeLabel from '@/Components/Label.vue';
 import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
 
+defineProps({
+   errors: Object
+});
+
 const form = useForm({
     name: '',
     username: '',
